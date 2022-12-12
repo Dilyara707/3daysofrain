@@ -1,0 +1,284 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'Lobster Two', cursive;
+    background-color: white;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*отменяет маркеры*/
+}
+
+.btn-reset {
+   padding: 0;
+   border: none;
+   background-color: transparent;   /*устанавливает прозрачный фон*/
+   cursor: pointer; /*чтоб было видно курсор, что можно кликать*/
+   color:black;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
+    color: black;
+    margin-bottom: 40px;
+}
+
+.container-2 {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
+    color: black;
+}
+
+
+.section-title {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.section-descr {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.section-offset {
+    padding-top: 87px;
+    padding-bottom: 16px;
+}
+
+/*header*/
+.header {
+    padding: 6px 0;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.header-logo {
+    width: 200px;
+    height: 100px;
+    margin-right: 82px;  /* распределяет по горизонтали, прижав меню навигации вправо*/
+}
+
+.header-list-item {
+    margin-right: 52px;   /*расстояние между навигацией и кнопкой*/
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 52px;
+}
+
+
+/*hero*/
+.hero {
+    padding: 10px 0;
+    background-color: white;
+}
+
+.hero-content {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+   
+.text{
+    float: left;
+    margin: 20px;
+    color: black;
+}
+
+
+.imglogo{
+    border-radius: 15px;
+}
+
+
+.imgl{
+    width: 60px;
+    margin: 10px;
+    height: 60px;
+}
+
+
+/*services*/
+
+
+.services-descr {   /*параграф-абзац*/
+    text-align: center;
+}
+
+.services-item {
+    flex-direction: column; /*меняем главную ось*/
+    align-items: center;    /*отцентруем*/
+    padding: 10px;
+    width: 450px;
+    
+    border-radius: 11px;
+}
+
+.services-item-icon{
+    border-radius: 10px;
+}
+
+/*далее выставим отступ между нашими карточками в services, 
+но нужно учитывать, что карточек может стать больше поэтому зададим справа отступ 30, 
+но у каждой четвертой будем обнулять*/
+
+.services-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+
+
+.services-item-title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.services-item-descr {
+    margin: 0;
+    text-align: center;  /*текст по центру*/
+}
+
+
+/*Article*/
+.articles-list {
+    justify-content:center
+}
+.articles-item {
+    width: 285px;
+   
+    text-decoration: underline ;
+    
+}
+
+
+
+.articles-item:not(:nth-child(5n)) {
+    margin-right: 30px;
+
+}
+
+.articles-title{
+    text-align: center;
+    color: black;
+}
+
+
+.blog-preview-text {
+    padding: 30px;
+}
+
+.blog-preview-title {
+    margin: 0;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.blog-preview-descr {
+    padding: 0;
+    margin: 0;
+    color: black;
+    height: 100%; 
+    
+}
+
+/*clients*/
+.clients-item {
+    flex-direction: column;
+    width: 370px;
+    padding: 50px 36px;
+    padding-bottom: 30px;
+    outline: 1px solid black; /*для того, чтобы мы могли визуально видеть границы*/
+    border-radius: 10px;
+}
+
+.clients-item:hover{
+    box-shadow: 0 0 50px black;
+}
+
+.clients-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.clients-item-descr {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+
+.clients-title{
+    text-align: center;
+}
+
+.clients-user {
+    margin-top: auto;
+}
+
+.clients-avatar {
+    flex-shrink: 0;
+    width: 60px;
+    margin-right: 17px;
+    border-radius: 50px;
+    
+}
+
+.clients-name {
+    margin-bottom: 5px;
+}
+
+.zayavkaa{
+    align-items: center;
+}
+
+
+/*footer*/
+.footer {
+    padding: 42px 0;
+}
+
+.footer-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    align-items: center;
+}
+
+.footer-copy{
+    color:grey;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 28px;
+}
